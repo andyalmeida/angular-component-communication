@@ -6,7 +6,7 @@ import { AfterViewInit, Component, ElementRef, Input, OnChanges, OnInit, SimpleC
   styleUrls: ['./criteria.component.css']
 })
 export class CriteriaComponent implements OnInit, AfterViewInit, OnChanges {
-  listFilter: string;
+  listFilter: string = 'cart';
   @Input() displayDetail: boolean;
   @Input() hitCount: number;
   hitMessage: string;
