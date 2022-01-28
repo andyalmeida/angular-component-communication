@@ -6,8 +6,10 @@
   <div class='panel-body'>
     <!-- Filter by the Title   -->
     <div class="row">
-      <pm-criteria class="col-md-10" [displayDetail]='includeDetail' [hitCount]='filteredProducts?.length'>
+      <pm-criteria class="col-md-10" #filterElement [displayDetail]='includeDetail'
+        [hitCount]='filteredProducts?.length'>
       </pm-criteria>
+      {{filterElement.listFilter}}
     </div>
 
     <div class='table-responsive'>
